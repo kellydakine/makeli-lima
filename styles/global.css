@@ -1,0 +1,56 @@
+@import url("/styles/header.css");
+@import url("/styles/home.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* global styling */
+:root {
+  --dark-one: #333333;
+  --dark-two: #1b1d20;
+  --dark-text: #383838;
+
+  --gray-one: #606163;
+  --gray-two: #b0b2b3;
+
+  --light-one: #ffffff;
+  --light-two: #f8f8f8;
+
+  --primary-color: #aa88ff;
+  --secondary-color: #7700ee;
+  /* --tertiary-color: #cc11ff; */
+
+  --linear-gradient-purple: linear-gradient(#9b30f9, #8844ee);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  padding-top: 80px;
+  background-color: var(--light-two);
+  color: var(--dark-text);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* dark theme */
+.dark-theme {
+  background-color: var(--dark-one);
+  color: var(--light-one);
+}
+
+.dark-theme .nav-name {
+  color: var(--light-one);
+}
+
+.dark-theme .profile-social-link:hover i {
+  color: var(--light-one);
+}
