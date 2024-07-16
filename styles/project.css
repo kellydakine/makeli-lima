@@ -1,0 +1,45 @@
+.container-project {
+  margin-bottom: 4rem;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  /* font-family: "Karla", sans-serif; */
+  flex-shrink: 0;
+  /* margin-right: 85px; */
+  width: 180px;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.project-data {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #4a5568;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #cbd5e0;
+  text-decoration: none;
+}
+
+.project-description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #a0aec0;
+  margin-top: 0.5rem;
+}

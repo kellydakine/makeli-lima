@@ -1,7 +1,12 @@
 @import url("/styles/header.css");
 @import url("/styles/home.css");
+@import url("/styles/about-me.css");
+@import url("/styles/experience.css");
+@import url("/styles/skills.css");
+@import url("/styles/project.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 /* global styling */
 :root {
@@ -17,7 +22,6 @@
 
   --primary-color: #aa88ff;
   --secondary-color: #7700ee;
-  /* --tertiary-color: #cc11ff; */
 
   --linear-gradient-purple: linear-gradient(#9b30f9, #8844ee);
 }
@@ -31,26 +35,33 @@
 }
 
 body {
-  padding-top: 80px;
+  padding-top: 60px;
   background-color: var(--light-two);
   color: var(--dark-text);
 }
 
 .container {
   width: 80%;
+  max-width: 1200px;
   margin: auto;
 }
 
-/* dark theme */
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-two);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-one);
+  border-radius: 5px;
+}
+
+/* global dark theme */
 .dark-theme {
   background-color: var(--dark-one);
-  color: var(--light-one);
-}
-
-.dark-theme .nav-name {
-  color: var(--light-one);
-}
-
-.dark-theme .profile-social-link:hover i {
   color: var(--light-one);
 }

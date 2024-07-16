@@ -7,7 +7,7 @@
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
   z-index: 1000;
-  padding: 0 20px;
+  background-color: var(--light-two);
 }
 
 .header-nav {
@@ -38,7 +38,7 @@
 .nav-name {
   font-weight: 600;
   color: var(--primary-color);
-  font-weight: 400;
+  font-weight: 300;
   position: relative;
   padding-bottom: 5px;
   transition: color 0.3s ease;
@@ -63,6 +63,19 @@
 
 .nav-name:hover {
   color: var(--secondary-color);
+}
+
+/* dark theme */
+.dark-theme .nav-name {
+  color: var(--light-one);
+}
+
+.dark-theme .profile-social-link:hover i {
+  color: var(--light-one);
+}
+
+.dark-theme .container-header {
+  background: var(--dark-one);
 }
 
 /* responsiveness */

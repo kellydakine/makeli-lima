@@ -63,7 +63,7 @@
 
 /* responsiveness */
 @media (max-width: 768px) {
-  .container-home {
+  .home {
     justify-content: center;
     text-align: center;
     height: calc(-100px + 60vh);
