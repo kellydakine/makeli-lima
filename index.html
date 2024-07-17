@@ -13,88 +13,114 @@
   </head>
 
   <body>
-    <header class="container-header">
-      <div class="header-nav container">
+    <div>
+    <header class="header">
+      <div class="header-container container">
         <img
           src="/assets/icons/portfolio-logo.png"
           alt="Logo do portifólio"
           class="logo"
         />
-        <nav class="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-name" href="#">home</a>
+        <nav class="header-nav" aria-label="Navegação principal">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-name" href="#">sobre mim</a>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">sobre mim</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-name" href="#">experiência</a>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">experiência</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-name" href="#">habilidades</a>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">habilidades</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-name" href="#">projetos</a>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">projetos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-name" href="#">contato</a>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">contato</a>
             </li>
           </ul>
         </nav>
 
-        <i class="ri-moon-line change-theme" id="btn-theme"></i>
+        <button
+          class="ri-moon-line change-theme btn-chance"
+          id="btn-theme"
+          aria-label="Mudar cor do tema de fundo"
+        ></button>
       </div>
     </header>
 
-    <main class="container-home">
-      <div class="container-home container">
+    <main class="home">
+      <section class="home-content container">
         <p>Olá, sou a</p>
         <h1>MAKELI LIMA</h1>
         <p>DESENVOLVEDORA WEB FRONT-END</p>
 
         <div class="profile-cta">
-          <button class="cta-download" as="a" href="#">Download CV</button>
+          <a
+            class="cta-download"
+            href="#"
+            aria-label="Download do currículo da Makeli Lima"
+            >Download CV</a
+          >
 
-          <ul class="profile-social">
-            <a
-              href="https://github.com/kellydakine"
-              target="_blank"
-              class="profile-social-link"
-            >
-              <i class="ri-github-fill"></i>
-            </a>
-            <a
-              href="https://codepen.io/kellydakine"
-              target="_blank"
-              class="profile-social-link"
-            >
-              <i class="ri-codepen-line"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/makelilima/"
-              target="_blank"
-              class="profile-social-link"
-            >
-              <i class="ri-linkedin-box-fill"></i>
-            </a>
-            <a
-              href="mailto:kellydakine@gmail.com"
-              target="_blank"
-              class="profile-social-link"
-            >
-              <i class="ri-mail-line"></i>
-            </a>
+          <ul class="profile-social-list">
+            <li>
+              <a
+                href="https://github.com/kellydakine"
+                target="_blank"
+                class="profile-social-link"
+                aria-label="Acesso ao GitHub da Makeli"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/kellydakine"
+                target="_blank"
+                class="profile-social-link"
+                aria-label="Acesso ao CodePen da Makeli"
+              >
+                <i class="ri-codepen-line"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/makelilima/"
+                target="_blank"
+                class="profile-social-link"
+                aria-label="Acesso ao LinkedIn da Makeli"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:kellydakine@gmail.com"
+                target="_blank"
+                class="profile-social-link"
+                aria-label="Acesso ao Email da Makeli"
+              >
+                <i class="ri-mail-line"></i>
+              </a>
+            </li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <img class="home-img" src="/assets/img/home-banner.svg" alt="" />
+      <img
+        class="home-image"
+        src="/assets/img/home-banner.svg"
+        alt="Banner ilustrativo em formado geométrico de cor roxo"
+      />
     </main>
 
-    <section class="container-about-me">
-      <div class="about-container container">
-        <h2 class="about-title">Sobre Mim</h2>
+    <section class="about-me">
+      <div class="about-me-container container">
+        <h2 class="section-title section-title-color">Sobre Mim</h2>
         <div>
           <p class="about-description">
             Estou cursando Sistemas de Informação na UNISUL e atualmente sou
@@ -113,140 +139,195 @@
       </div>
     </section>
 
-    <section class="container-experience">
+    <section class="experience">
       <div class="experience-container container">
-        <h2 class="experience-title">Experiência</h2>
+      <h2 class="section-title section-title-color">Experiência</h2>
 
-        <div class="container-experience">
-          <div class="experience">
-            <header class="experience-data">09/2023 — Atual</header>
-            <div>
-              <h3>
-                <a class="experience-name" href="" target="_blank">
-                  Estagiária de Engenharia de Software · Ahgora by TOTVS
-                </a>
-              </h3>
-              <p class="experience-description">
-                Manutenção de código legado utilizando ASP e JavaScript, com
-                foco na resolução de bugs e otimização de funcionalidades em
-                junção ao desenvolvimento de interfaces responsivas e utilização
-                do Tailwind CSS para implementação eficiente de designs.
-                Utilização do SQL para manipulação e gerenciamento de dados.
-                Aplica metodologia Kanban para organização e gestão de projetos,
-                garantindo entregas pontuais e eficazes.
-              </p>
-              <ul class="technology-items">
-                <li class="tech-item">JavaScript</li>
-                <li class="tech-item">ASP Classic</li>
-                <li class="tech-item">SQL</li>
-                <li class="tech-item">Kanban</li>
-                <li class="tech-item">Linux</li>
-                <li class="tech-item">HTML</li>
-                <li class="tech-item">CSS</li>
-                <li class="tech-item">Bitbucket</li>
-                <li class="tech-item">Jira</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience">
-            <header class="experience-data">02/2023 — 06/2023</header>
-            <div>
-              <h3>
-                <a class="experience-name" href="" target="_blank">
-                  Trainee Front-End · Compass.UOL
-                </a>
-              </h3>
-              <p class="experience-description">
-                Trabalhei no desenvolvimento em React e TypeScript para o
-                projeto Poliedro, focando em novas funcionalidades e manutenções
-                contínuas. Minhas responsabilidades incluíam o desenvolvimento
-                de interfaces responsivas e acessíveis, além da otimização para
-                escalabilidade e compatibilidade com diversos navegadores. Além
-                disso, fui mentora no programa de bolsas front-end, ajudando a
-                orientar e apoiar os participantes no desenvolvimento de suas
-                habilidades.
-              </p>
-              <ul class="technology-items">
-                <li class="tech-item">JavaScript</li>
-                <li class="tech-item">TypeScript</li>
-                <li class="tech-item">React</li>
-                <li class="tech-item">Material UI</li>
-                <li class="tech-item">HTML & CSS</li>
-                <li class="tech-item">Scrum</li>
-                <li class="tech-item">Figma</li>
-              </ul>
-            </div>
+      <article>
+        <div class="experience-item">
+          <header class="section-status">09/2023 — Atual</header>
+          <div>
+            <h3>
+              <a class="section-name" href="" target="_blank">
+                Estagiária de Engenharia de Software · Ahgora by TOTVS
+              </a>
+            </h3>
+            <p class="section-details">
+              Manutenção de código legado utilizando ASP e JavaScript, com foco
+              na resolução de bugs e otimização de funcionalidades em junção ao
+              desenvolvimento de interfaces responsivas e utilização do Tailwind
+              CSS para implementação eficiente de designs. Utilização do SQL
+              para manipulação e gerenciamento de dados. Aplica metodologia
+              Kanban para organização e gestão de projetos, garantindo entregas
+              pontuais e eficazes.
+            </p>
+            <ul class="section-cards">
+              <li class="section-card">JavaScript</li>
+              <li class="section-card">ASP Classic</li>
+              <li class="section-card">SQL</li>
+              <li class="section-card">Kanban</li>
+              <li class="section-card">Linux</li>
+              <li class="section-card">HTML</li>
+              <li class="section-card">CSS</li>
+              <li class="section-card">Bitbucket</li>
+              <li class="section-card">Jira</li>
+            </ul>
           </div>
         </div>
-      </div>
+
+        <article class="experience-item">
+          <header class="section-status">02/2023 — 06/2023</header>
+          <div>
+            <h3>
+              <a class="section-name" href="" target="_blank">
+                Trainee Front-End · Compass.UOL
+              </a>
+            </h3>
+            <p class="section-details">
+              Trabalhei no desenvolvimento em React e TypeScript para o projeto
+              Poliedro, focando em novas funcionalidades e manutenções
+              contínuas. Minhas responsabilidades incluíam o desenvolvimento de
+              interfaces responsivas e acessíveis, além da otimização para
+              escalabilidade e compatibilidade com diversos navegadores. Além
+              disso, fui mentora no programa de bolsas front-end, ajudando a
+              orientar e apoiar os participantes no desenvolvimento de suas
+              habilidades.
+            </p>
+            <ul class="section-cards">
+              <li class="section-card">JavaScript</li>
+              <li class="section-card">TypeScript</li>
+              <li class="section-card">React</li>
+              <li class="section-card">Material UI</li>
+              <li class="section-card">HTML & CSS</li>
+              <li class="section-card">Scrum</li>
+              <li class="section-card">Figma</li>
+            </ul>
+          </div>
+        </article>
+      </article>
+    </div>
     </section>
 
-    <section class="container-skills">
-      <div class="skills-flex container">
-        <h2 class="skills-title">Habilidades</h2>
+    <section class="skills">
+      <div class="skills-container container">
+        <h2 class="section-title skills-title">Habilidades</h2>
 
-        <div class="skills-cards">
-          <div class="skills-card">
+        <ul class="skills-list">
+          <li class="skills-item">
+            <img
+              class="skills-icon"
+              src="assets/languages/html.svg"
+              alt="Ícone do HTML"
+              aria-label="Ícone do HTML"
+            />
             <p>HTML5</p>
-            <img src="assets/languages/html.svg" alt="html" />
-          </div>
-          <div class="skills-card">
+          </li>
+
+          <li class="skills-item">
+            <img
+             class="skills-icon"
+              src="assets/languages/css.svg"
+              alt="Ícone do CSS"
+              aria-label="Ícone do CSS"
+            />
             <p>CSS3</p>
-            <img src="assets/languages/css.svg" alt="css" />
-          </div>
-          <div class="skills-card">
+          </li>
+
+          <li class="skills-item">
+            <img
+              class="skills-icon"
+              src="assets/languages/javascript.svg"
+              alt="Ícone do JavaScript"
+              aria-label="Ícone do JavaScript"
+            />
             <p>JavaScript</p>
-            <img src="assets/languages/javascript.svg" alt="javascript" />
-          </div>
-          <div class="skills-card">
+          </li>
+
+          <li class="skills-item">
+            <img
+              class="skills-icon"
+              src="assets/languages/typescript.svg"
+              alt="Ícone do TypeScript"
+              aria-label="Ícone do TypeScript"
+            />
             <p>TypeScript</p>
-            <img src="assets/languages/typescript.svg" alt="typescript" />
-          </div>
-          <div class="skills-card">
+          </li>
+
+          <li class="skills-item">
+            <img
+              class="skills-icon"
+              src="assets/languages/sass.svg"
+              alt="Ícone do Sass"
+              aria-label="Ícone do Sass"
+            />
             <p>Sass</p>
-            <img src="assets/languages/sass.svg" alt="sass" />
-          </div>
-          <div class="skills-card">
+          </li>
+
+          <li class="skills-item">
+            <img
+              class="skills-icon"
+              src="assets/languages/figma.svg"
+              alt="Ícone do Figma"
+              aria-label="Ícone do Figma"
+            />
             <p>Figma</p>
-            <img src="assets/languages/figma.svg" alt="figma" />
-          </div>
-          <div class="skills-card">
-            <p>Figma</p>
-            <img src="assets/languages/react.svg" alt="react" />
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="container-project">
+    <section class="project">
       <div class="project-container container">
-        <h2 class="project-title">Projetos</h2>
+        <h2 class="section-title section-title-color">Projeto</h2>
 
-        <div class="container-project">
-          <div class="project">
-            <div class="flex-name">
-              <header class="project-data">Finalizado</header>
-              <img src="assets/icons/link.svg" alt="html" />
-              <img src="assets/icons/github.svg" alt="html" />
-            </div>
+        <article>
+          <div class="project-item">
+            <a href="#" class="project-image-link">
+              <img
+                class="project-image"
+                src="/assets/projects/portifólio.png"
+                alt="Imagem do Projeto"
+              />
+            </a>
             <div>
-              <h3>
-                <a class="project-name" href="" target="_blank">
-                  Portifólio
+              <div class="flex-name">
+                <header class="section-status">Em andamento</header>
+                <a href="#" class="project-icon-link">
+                  <img
+                    class="project-item-icon"
+                    src="assets/icons/link.svg"
+                    alt="Site"
+                    aria-label="Acesso do projeto no site"
+                  />
                 </a>
-              </h3>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit sed necessitatibus distinctio dolore, praesentium eius modi ipsam tenetur, neque vero voluptates pariatur, natus illo ab quisquam. Sunt, deleniti atque!
-              </p>
-              <ul class="technology-items">
-                <li class="tech-item">JavaScript</li>
-                <li class="tech-item">CSS</li>
-                <li class="tech-item">HTML</li>
-              </ul>
+                <a href="#" class="project-icon-link">
+                  <img
+                    class="project-item-icon"
+                    src="assets/icons/github.svg"
+                    alt="GitHub"
+                    aria-label="Acesso do projeto no GitHub"
+                  />
+                </a>
+              </div>
+              <div>
+                <h3>
+                  <a class="section-name" href="#" target="_blank">Portifólio</a>
+                </h3>
+                <p class="section-details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                  ullam soluta, iusto, dolorum atque magnam eligendi vel doloribus
+                  quae non odio, praesentium in pariatur corrupti aperiam
+                  laboriosam. Modi, exercitationem officia.
+                </p>
+                <ul class="section-cards">
+                  <li class="section-card">JavaScript</li>
+                  <li class="section-card">HTML</li>
+                  <li class="section-card">CSS</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   </body>

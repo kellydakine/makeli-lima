@@ -1,45 +1,20 @@
-.container-about-me {
+.about-me {
   margin-bottom: 4rem;
 }
 
-.about-container {
+.about-me-container  {
   display: flex;
   justify-content: center;
 }
 
-.about-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  /* font-family: "Karla", sans-serif; */
-  flex-shrink: 0;
-  /* margin-right: 70px; */
-  width: 180px;
-  margin-top: 0.3rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
 .about-description {
   font-size: 1rem;
-  line-height: 1.8;
+  line-height: 1.5;
   margin-bottom: 0.4rem;
 }
 
-.about-image {
-  flex: 1;
-  max-width: 300px;
-  margin-left: 40px;
-}
-
-.profile-image {
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
 @media (max-width: 768px) {
-  .about-container {
+  .about-me-container  {
     flex-direction: column;
   }
 

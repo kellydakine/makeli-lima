@@ -46,6 +46,62 @@ body {
   margin: auto;
 }
 
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 180px;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-title-color {
+  color: var(--primary-color);
+}
+
+.section-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.section-details {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0.8rem 0px;
+}
+
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-card {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  background-color: #f4f1f1;
+  color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 5px;

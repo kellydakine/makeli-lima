@@ -1,4 +1,4 @@
-.container-header {
+.header {
   position: fixed;
   top: 0;
   display: flex;
@@ -10,104 +10,110 @@
   background-color: var(--light-two);
 }
 
-.header-nav {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
-  height: 40px;
+  height: 2.5rem;
 }
 
-.nav-menu {
+.header-nav {
   display: flex;
 }
 
-.nav-list {
+.header-nav-list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-item {
-  margin-left: 20px;
+.header-nav-item {
+  margin-left: 1.25rem;
 }
 
-.nav-name {
+.header-nav-link {
   font-weight: 600;
   color: var(--primary-color);
   font-weight: 300;
   position: relative;
-  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
   transition: color 0.3s ease;
 }
 
-.nav-name::after {
+.header-nav-link::after {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
   display: block;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   right: 0;
   transition: 0.5s ease;
 }
 
-.nav-name:hover::after {
+.header-nav-link:hover::after {
   width: 100%;
   left: 0;
   background: var(--secondary-color);
 }
 
-.nav-name:hover {
+.header-nav-link:hover {
   color: var(--secondary-color);
 }
 
+.btn-chance {
+  background: transparent;
+  border: none;
+}
+
 /* dark theme */
-.dark-theme .nav-name {
+.dark-theme .header-nav-link,
+.dark-theme .profile-social-link:hover i,
+.dark-theme .btn-chance {
   color: var(--light-one);
 }
 
-.dark-theme .profile-social-link:hover i {
-  color: var(--light-one);
-}
-
-.dark-theme .container-header {
+.dark-theme .header {
   background: var(--dark-one);
 }
 
 /* responsiveness */
 @media (max-width: 768px) {
-  .nav-list {
+  .header-nav-list {
     display: none;
-  }
-
-  .nav-menu {
-    position: relative;
-  }
-
-  .nav-menu::before {
-    content: "☰";
-    font-size: 24px;
-    cursor: pointer;
-    display: block;
-  }
-
-  .nav-menu.active .nav-list {
-    display: flex;
     flex-direction: column;
+    background-color: var(--light-two);
+    width: 100%;
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: var(--light-two);
-    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    z-index: 1001;
   }
 
-  .nav-item {
-    margin: 10px 0;
+  .header-nav.active .header-nav-list {
+    display: flex;
+  }
+
+  .header-nav-item {
+    margin: 1rem 0;
     text-align: center;
+  }
+
+  .header-nav::before {
+    content: "☰";
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .header-nav.active::before {
+    content: "✖";
   }
 }
