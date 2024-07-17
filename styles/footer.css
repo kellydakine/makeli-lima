@@ -3,5 +3,19 @@
   color: var(--light-one);
   padding: 1rem 0;
   text-align: center;
-  font-family: Arial, sans-serif;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    padding: 2rem 0;
+    font-size: 0.75rem;
+  }
 }

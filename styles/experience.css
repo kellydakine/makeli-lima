@@ -11,6 +11,7 @@
   margin-bottom: 0.8rem;
 }
 
+/* responsiveness */
 @media (max-width: 768px) {
   .experience-container {
     flex-direction: column;

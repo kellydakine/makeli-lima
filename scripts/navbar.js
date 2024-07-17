@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const navMenu = document.querySelector(".nav-menu");
+  const navMenu = document.querySelector(".header-nav");
 
   navMenu.addEventListener("click", function () {
-    this.classList.toggle("active");
+    navMenu.classList.toggle("active");
   });
 });
