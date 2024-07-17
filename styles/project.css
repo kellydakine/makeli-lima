@@ -1,5 +1,5 @@
-.project {
-  margin-top: 4rem;
+.projects {
+  margin: 4rem auto;
 }
 
 .project-container {
@@ -17,18 +17,6 @@
   transition: 0.3s;
 }
 
-.project-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(250, 250, 250, 0.1);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 .project-item:hover::before {
   opacity: 1;
 }
@@ -36,6 +24,7 @@
 .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(204, 204, 204, 0.1);
 }
 
 .project-image {

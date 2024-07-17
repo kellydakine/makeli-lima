@@ -4,6 +4,7 @@
 @import url("/styles/experience.css");
 @import url("/styles/skills.css");
 @import url("/styles/project.css");
+@import url("/styles/footer.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
@@ -32,12 +33,17 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   padding-top: 60px;
   background-color: var(--light-two);
   color: var(--dark-text);
+}
+
+section {
+  scroll-margin-top: 60px;
 }
 
 .container {

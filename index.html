@@ -13,33 +13,25 @@
   </head>
 
   <body>
-    <div>
     <header class="header">
       <div class="header-container container">
-        <img
-          src="/assets/icons/portfolio-logo.png"
-          alt="Logo do portifólio"
-          class="logo"
-        />
+        <h2 class="my-name">makeli.</h2>
         <nav class="header-nav" aria-label="Navegação principal">
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">home</a>
+              <a class="header-nav-link" href="#home">home</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">sobre mim</a>
+              <a class="header-nav-link" href="#about-me">sobre mim</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">experiência</a>
+              <a class="header-nav-link" href="#experience">experiência</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">habilidades</a>
+              <a class="header-nav-link" href="#skills">habilidades</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">projetos</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="#">contato</a>
+              <a class="header-nav-link" href="#projects">projetos</a>
             </li>
           </ul>
         </nav>
@@ -52,7 +44,7 @@
       </div>
     </header>
 
-    <main class="home">
+    <main id="home" class="home">
       <section class="home-content container">
         <p>Olá, sou a</p>
         <h1>MAKELI LIMA</h1>
@@ -61,10 +53,12 @@
         <div class="profile-cta">
           <a
             class="cta-download"
-            href="#"
+            href="/assets/curriculum.pdf"
             aria-label="Download do currículo da Makeli Lima"
-            >Download CV</a
+            download="curriculum.pdf"
           >
+            Download CV
+          </a>
 
           <ul class="profile-social-list">
             <li>
@@ -77,6 +71,7 @@
                 <i class="ri-github-fill"></i>
               </a>
             </li>
+
             <li>
               <a
                 href="https://codepen.io/kellydakine"
@@ -87,6 +82,7 @@
                 <i class="ri-codepen-line"></i>
               </a>
             </li>
+
             <li>
               <a
                 href="https://www.linkedin.com/in/makelilima/"
@@ -97,6 +93,7 @@
                 <i class="ri-linkedin-box-fill"></i>
               </a>
             </li>
+
             <li>
               <a
                 href="mailto:kellydakine@gmail.com"
@@ -118,7 +115,7 @@
       />
     </main>
 
-    <section class="about-me">
+    <section id="about-me" class="about-me">
       <div class="about-me-container container">
         <h2 class="section-title section-title-color">Sobre Mim</h2>
         <div>
@@ -139,79 +136,86 @@
       </div>
     </section>
 
-    <section class="experience">
+    <section id="experience" class="experience">
       <div class="experience-container container">
-      <h2 class="section-title section-title-color">Experiência</h2>
+        <h2 class="section-title section-title-color">Experiência</h2>
 
-      <article>
-        <div class="experience-item">
-          <header class="section-status">09/2023 — Atual</header>
-          <div>
-            <h3>
-              <a class="section-name" href="" target="_blank">
-                Estagiária de Engenharia de Software · Ahgora by TOTVS
-              </a>
-            </h3>
-            <p class="section-details">
-              Manutenção de código legado utilizando ASP e JavaScript, com foco
-              na resolução de bugs e otimização de funcionalidades em junção ao
-              desenvolvimento de interfaces responsivas e utilização do Tailwind
-              CSS para implementação eficiente de designs. Utilização do SQL
-              para manipulação e gerenciamento de dados. Aplica metodologia
-              Kanban para organização e gestão de projetos, garantindo entregas
-              pontuais e eficazes.
-            </p>
-            <ul class="section-cards">
-              <li class="section-card">JavaScript</li>
-              <li class="section-card">ASP Classic</li>
-              <li class="section-card">SQL</li>
-              <li class="section-card">Kanban</li>
-              <li class="section-card">Linux</li>
-              <li class="section-card">HTML</li>
-              <li class="section-card">CSS</li>
-              <li class="section-card">Bitbucket</li>
-              <li class="section-card">Jira</li>
-            </ul>
+        <article>
+          <div class="experience-item">
+            <header class="section-status">09/2023 — Atual</header>
+            <div>
+              <h3>
+                <a
+                  class="section-name"
+                  href="https://www.ahgora.com/en"
+                  target="_blank"
+                >
+                  Estagiária de Engenharia de Software · Ahgora by TOTVS
+                </a>
+              </h3>
+              <p class="section-details">
+                Manutenção de código legado utilizando ASP e JavaScript, com
+                foco na resolução de bugs e otimização de funcionalidades em
+                junção ao desenvolvimento de interfaces responsivas e utilização
+                do Tailwind CSS para implementação eficiente de designs.
+                Utilização do SQL para manipulação e gerenciamento de dados.
+                Aplica metodologia Kanban para organização e gestão de projetos,
+                garantindo entregas pontuais e eficazes.
+              </p>
+              <ul class="section-cards">
+                <li class="section-card">JavaScript</li>
+                <li class="section-card">ASP Classic</li>
+                <li class="section-card">SQL</li>
+                <li class="section-card">Kanban</li>
+                <li class="section-card">Linux</li>
+                <li class="section-card">HTML</li>
+                <li class="section-card">CSS</li>
+                <li class="section-card">Bitbucket</li>
+                <li class="section-card">Jira</li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <article class="experience-item">
-          <header class="section-status">02/2023 — 06/2023</header>
-          <div>
-            <h3>
-              <a class="section-name" href="" target="_blank">
-                Trainee Front-End · Compass.UOL
-              </a>
-            </h3>
-            <p class="section-details">
-              Trabalhei no desenvolvimento em React e TypeScript para o projeto
-              Poliedro, focando em novas funcionalidades e manutenções
-              contínuas. Minhas responsabilidades incluíam o desenvolvimento de
-              interfaces responsivas e acessíveis, além da otimização para
-              escalabilidade e compatibilidade com diversos navegadores. Além
-              disso, fui mentora no programa de bolsas front-end, ajudando a
-              orientar e apoiar os participantes no desenvolvimento de suas
-              habilidades.
-            </p>
-            <ul class="section-cards">
-              <li class="section-card">JavaScript</li>
-              <li class="section-card">TypeScript</li>
-              <li class="section-card">React</li>
-              <li class="section-card">Material UI</li>
-              <li class="section-card">HTML & CSS</li>
-              <li class="section-card">Scrum</li>
-              <li class="section-card">Figma</li>
-            </ul>
-          </div>
+          <article class="experience-item">
+            <header class="section-status">02/2023 — 06/2023</header>
+            <div>
+              <h3>
+                <a
+                  class="section-name"
+                  href="https://compass.uol/pt/home/"
+                  target="_blank"
+                >
+                  Trainee Front-End · Compass.UOL
+                </a>
+              </h3>
+              <p class="section-details">
+                Trabalhei no desenvolvimento em React e TypeScript para o
+                projeto Poliedro, focando em novas funcionalidades e manutenções
+                contínuas. Minhas responsabilidades incluíam o desenvolvimento
+                de interfaces responsivas e acessíveis, além da otimização para
+                escalabilidade e compatibilidade com diversos navegadores. Além
+                disso, fui mentora no programa de bolsas front-end, ajudando a
+                orientar e apoiar os participantes no desenvolvimento de suas
+                habilidades.
+              </p>
+              <ul class="section-cards">
+                <li class="section-card">JavaScript</li>
+                <li class="section-card">TypeScript</li>
+                <li class="section-card">React</li>
+                <li class="section-card">Material UI</li>
+                <li class="section-card">HTML & CSS</li>
+                <li class="section-card">Scrum</li>
+                <li class="section-card">Figma</li>
+              </ul>
+            </div>
+          </article>
         </article>
-      </article>
-    </div>
+      </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
       <div class="skills-container container">
         <h2 class="section-title skills-title">Habilidades</h2>
-
         <ul class="skills-list">
           <li class="skills-item">
             <img
@@ -222,17 +226,15 @@
             />
             <p>HTML5</p>
           </li>
-
           <li class="skills-item">
             <img
-             class="skills-icon"
+              class="skills-icon"
               src="assets/languages/css.svg"
               alt="Ícone do CSS"
               aria-label="Ícone do CSS"
             />
             <p>CSS3</p>
           </li>
-
           <li class="skills-item">
             <img
               class="skills-icon"
@@ -242,7 +244,6 @@
             />
             <p>JavaScript</p>
           </li>
-
           <li class="skills-item">
             <img
               class="skills-icon"
@@ -252,7 +253,6 @@
             />
             <p>TypeScript</p>
           </li>
-
           <li class="skills-item">
             <img
               class="skills-icon"
@@ -262,7 +262,6 @@
             />
             <p>Sass</p>
           </li>
-
           <li class="skills-item">
             <img
               class="skills-icon"
@@ -276,48 +275,67 @@
       </div>
     </section>
 
-    <section class="project">
+    <section id="projects" class="projects">
       <div class="project-container container">
-        <h2 class="section-title section-title-color">Projeto</h2>
+        <h2 class="section-title section-title-color">Projetos</h2>
 
         <article>
           <div class="project-item">
-            <a href="#" class="project-image-link">
+            <a
+              href="https://makeli.vercel.app/"
+              class="project-image-link"
+              target="_blank"
+            >
               <img
                 class="project-image"
                 src="/assets/projects/portifólio.png"
                 alt="Imagem do Projeto"
               />
             </a>
+
             <div>
               <div class="flex-name">
                 <header class="section-status">Em andamento</header>
-                <a href="#" class="project-icon-link">
+                <a
+                  href="https://makeli.vercel.app/"
+                  class="project-icon-link"
+                  target="_blank"
+                >
                   <img
                     class="project-item-icon"
                     src="assets/icons/link.svg"
-                    alt="Site"
+                    alt="ícone de site"
                     aria-label="Acesso do projeto no site"
                   />
                 </a>
-                <a href="#" class="project-icon-link">
+                <a
+                  href="https://github.com/kellydakine/makeli-lima"
+                  class="project-icon-link"
+                  target="_blank"
+                >
                   <img
                     class="project-item-icon"
                     src="assets/icons/github.svg"
-                    alt="GitHub"
+                    alt="ícone do GitHub"
                     aria-label="Acesso do projeto no GitHub"
                   />
                 </a>
               </div>
+
               <div>
                 <h3>
-                  <a class="section-name" href="#" target="_blank">Portifólio</a>
+                  <a
+                    class="section-name"
+                    href="https://makeli.vercel.app/"
+                    target="_blank"
+                    >Portifólio</a
+                  >
                 </h3>
                 <p class="section-details">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                  ullam soluta, iusto, dolorum atque magnam eligendi vel doloribus
-                  quae non odio, praesentium in pariatur corrupti aperiam
-                  laboriosam. Modi, exercitationem officia.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid ullam soluta, iusto, dolorum atque magnam eligendi vel
+                  doloribus quae non odio, praesentium in pariatur corrupti
+                  aperiam laboriosam. Modi, exercitationem officia.
                 </p>
                 <ul class="section-cards">
                   <li class="section-card">JavaScript</li>
@@ -330,6 +348,13 @@
         </article>
       </div>
     </section>
+
+    <footer id="footer" class="footer">
+      <p>
+        &copy; 2024 - Desenvolvido por Makeli Lima | Todos os direitos
+        reservados.
+      </p>
+    </footer>
   </body>
 
   <script src="/scripts/navbar.js"></script>
